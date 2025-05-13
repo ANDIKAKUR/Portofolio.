@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portofolio</title>
+    <link rel="stylesheet" href="css/skil.css"> 
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+         <div class="">Andika</a></div>
+            <div class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="Experince.html">Experince</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="setificate.html">Sertificate</a></li>
+            </ul> 
+         </div>
+        </div>
+    </nav>
+    <!--hero / jumbotron -->
+    <header>
+        <h1 class="title">My Skill</h1>
+        <div class="card-container">
+          <!-- Mikrotik -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">Mikrotik</div>
+              <div class="card-back">
+                <ul>
+                      <li>>Mikrotik Fundamental (Management Network IP Address Configuration,
+                         DHCP (Server, Mac Static, Server Security, Client), IP Pool, DNS Server,
+                         Router Gateway, ARP Mode (Disabled, Enabled))</li>
+                      <li>DHCP Server and Client configuration</li>
+                      <li>Firewall  NAT (Masquerade)</li>
+                      <li>Bandwidth management (Queue, QoS)</li>
+                      <li>Wireless and Hotspot configuration</li>
+                      <li>Tunnel/VPN (EOIP Tunnel, PPTP tunnel, PPOE Tunnel)</li>
+                      <li>Point To Point Addressing</li>
+                    <li>Routing (Routing Static, Default Route)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Debian -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">Debian</div>
+              <div class="card-back">
+                <ul>
+                  <li>Installing and configuring Debian</li>
+                    <li>Linux file system and basic CLI commands (ls, cd, rm, cp, mv)</li>
+                    <li>Package management (apt)</li>
+                    <li>User and permissions management (chmod, chown, usermod)</li>
+                    <li>Network configuration (Static IP, DHCP, SSH)</li>
+                    <li>Web server setup (Apache, Nginx)</li>
+                    <li>Wordpress,Webmin,Canti, Samba Server</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Cisco -->
+          <div class="card">
+            <div class="card-inner">
+              <div class="card-front">Cisco</div>
+              <div class="card-back">
+                <ul>
+                    <li>Vlan</li>
+                    <li>Vlan Trunking</li>
+                    <li>Etherchannel (Etherchannel LACP</li>
+                    <li>Etherchannel PAgP)</li>
+                    <li>DHCP (Server, Relay)</li>
+                    <li>Routing (Dynamic OSPF Cisco, EIGRP, RIPv2)</li>
+                    <li>NAT (NAT Static Cisco, NAT Dynamic Cisco)</li>
+                    <li>vlms</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <script>
+          // Flip on click
+          document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('click', () => {
+              card.classList.toggle('is-flipped');
+            });
+          });
+        </script>
+    </header>
+</body>
+</body>
+</body>
+</html>

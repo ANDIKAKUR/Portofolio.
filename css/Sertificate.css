@@ -1,0 +1,203 @@
+/* RESET & GLOBAL */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background-color: #0d1117;
+    color: #ffffff;
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+  
+  /* WRAPPER */
+  .wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* LOGO */
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #05ff65;
+  }
+  
+  /* NAVIGATION */
+  nav {
+    background-color: #0b0c10;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  nav .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .menu ul li a:hover {
+    background-color: #05ff65;
+    color: #000;
+  }
+  
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(5, 5, 5, 0.9)),
+                url("../img/bacground.jpg") center/cover no-repeat;
+    min-height: 100vh; /* Agar setidaknya 1 layar penuh, bisa lebih */
+    width: 100%;
+    padding: 80px 20px; /* Spasi atas bawah */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #05ff65;
+    margin: 0;
+    animation: slideUp 1s ease-out;
+    letter-spacing: 2px;
+  }
+
+  .header-jumbotrom {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .header-jumbotrom h1 {
+    font-size: 2.8rem;
+    color: #05ff65;
+    margin-bottom: 30px;
+    animation: slideUp 1s ease-out;
+  }
+  
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* CERTIFICATE LIST */
+  .certificate-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .certificate-list li {
+    margin: 15px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  /* KOTAK CERTIFICATE (Box Effect) */
+  .certificate-box {
+    display: block;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    border: 2px solid #444;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 10px;
+  }
+  
+  .certificate-box a {
+    text-decoration: none;
+    color: #05ff65;
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .certificate-box a:hover {
+    color: #ff6f00;
+    transform: translateX(8px);
+  }
+  
+  .certificate-box:hover {
+    background-color: #444;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  }
+  
+  /* CERTIFICATE IMAGE */
+  .certificate-image {
+    width: 50%;
+    max-width: 800px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    height: 70%;
+    margin-top: 8%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* BACK BUTTON */
+  .back-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* RESPONSIVE */
+  @media screen and (max-width: 768px) {
+    .certificate-list li {
+      font-size: 1rem;
+    }
+  
+    .certificate-image {
+      width: 80%;
+    }
+  
+    header h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
